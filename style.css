@@ -24,6 +24,14 @@
      
 }
 
+.padding-sm{
+    padding: 15px;
+}
+
+.border-rad-sm{
+    border-radius: 5px;
+}
+
 /* Versione desktop first */
 
 *{
@@ -88,11 +96,31 @@ body{
     background-image: url(img/mine.jpg);
 }
 
+.row-send-message{
+    justify-content: flex-end;
+    
+}
+
+.row-received-message{
+    justify-content: flex-start;
+}
+
+.message-send{
+    background-color: var(--colore-messaggi-inviati);
+    width: 55%;
+}
+
+.message-received{
+    background-color: white;
+    width: 55%;
+}
+
 /* barra scrivi un messaggio */
 .bottombar{
     height: 15%;
     background-color: var(--colore-topbar);
     align-items: center;
+    
 }
 
 .emoticon{
@@ -105,7 +133,11 @@ body{
 
 .write-message input{
     width: 100%;
+    height: 65px;
+    border-radius: 5px;
 }
+
+
 
 .vocal-message{
     width: 10%;
@@ -123,6 +155,14 @@ body{
 /* versione mobile */
 @media screen and (max-width: 540px){
     .container{
+        width: 100%;
+    }
+
+    .col-sm{
+        display: none;
+    }
+
+    .col-md{
         width: 100%;
     }
 
