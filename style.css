@@ -7,6 +7,7 @@
     --colore-topbar-icone: #B1B1B1;
     --colore-bottombar-icone: #6B7376;   
     --colore-sezione-notifiche: #8EDAFC;   
+    --colore-last-access:#5C666B;
 }
 /* Fine root colori */
 
@@ -59,6 +60,18 @@ body{
 
 }
 
+/* topbar */
+.icons-topbar-dx .fa-solid{
+    color: var(--colore-bottombar-icone);
+    font-size: 1.4rem;
+}
+
+.icons-topbar-dx{
+    width: 10%;
+    justify-content: space-around;
+
+}
+
 /* colonna di sinistra */
 .col-sm{
     width: 29%;
@@ -91,7 +104,6 @@ body{
     width: 60px;
    object-fit: cover;
    border-radius: 50%;
-
 }
 
 
@@ -104,6 +116,15 @@ body{
 .text-user-topbar-dx{
     flex-direction: column;
     justify-content: center;
+}
+
+.name-user-topbar-dx{
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.last-access{
+    color: var(--colore-last-access);
 }
 
 /* box messaggi */
@@ -150,6 +171,16 @@ body{
 
 .emoticon{
     width: 10%;
+    justify-content: center;
+}
+
+.vocal-message{
+    justify-content: center;
+}
+
+.bottombar i{
+    color: var(--colore-bottombar-icone);
+    font-size: 1.4rem;
 }
 
 .write-message{
@@ -161,6 +192,7 @@ body{
     height: 65px;
     border-radius: 5px;
     padding-left: 5px;
+    border: none;
 }
 
 
