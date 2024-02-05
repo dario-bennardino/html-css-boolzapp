@@ -8,6 +8,7 @@
     --colore-bottombar-icone: #6B7376;   
     --colore-sezione-notifiche: #8EDAFC;   
     --colore-last-access:#5C666B;
+    --colore-search-chat:#FAFAFA;
 }
 /* Fine root colori */
 
@@ -60,7 +61,19 @@ body{
 
 }
 
-/* topbar */
+/* topbar sinistra */
+.icons-topbar-sx{
+    width: 30%;
+    justify-content: space-around;
+}
+
+.icons-topbar-sx .fa-solid{
+    color: var(--colore-topbar-icone);
+    font-size: 1.4rem;
+}
+
+
+/* topbar destra*/
 .icons-topbar-dx .fa-solid{
     color: var(--colore-bottombar-icone);
     font-size: 1.4rem;
@@ -81,9 +94,10 @@ body{
 
 .topbar-sx{
     height: 75px;
-    background-color: var(--colore-topbar);
-
-    
+    background-color: var(--colore-topbar);   
+    align-items: center; 
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .topbar-dx{
@@ -97,13 +111,30 @@ body{
 
 .img-user-topbar-dx{
     width: 75px;
-    height: 75px;
+    /* height: 75px; */
 }
 
 .img-user-topbar-dx img{
-    width: 60px;
+    width: 50px;
    object-fit: cover;
    border-radius: 50%;
+}
+
+.img-user-topbar-sx img{
+    width: 50px;
+   object-fit: cover;
+   border-radius: 50%;  
+}
+
+.notifications{
+    height: 80px;
+    background-color: var(--colore-sezione-notifiche);
+}
+
+.search-chat{
+    height: 75px;
+    background-color: var(--colore-search-chat);
+
 }
 
 
@@ -205,6 +236,17 @@ body{
 
 /* versione tablet */
 @media screen and (max-width: 992px){
+    .col-sm{
+        width: 10%;
+    }
+
+    .col-md{
+        width: 90%;
+    }
+
+    .icons-topbar-sx{
+        display: none;
+    }
 
 }
 
