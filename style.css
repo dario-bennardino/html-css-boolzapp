@@ -6,8 +6,19 @@
     --colore-topbar: #EAEAEA;
     --colore-topbar-icone: #B1B1B1;
     --colore-bottombar-icone: #6B7376;   
+    --colore-sezione-notifiche: #8EDAFC;   
 }
 /* Fine root colori */
+
+/* Utility */
+.d-flex{
+   display: flex;
+}
+
+.debug{
+    border: 1px solid black;
+}
+
 
 *{
     margin: 0;
@@ -17,4 +28,12 @@
 
 body{
     background-image: url(img/mine.jpg);
+}
+
+.container{
+    width: 100%;
+}
+
+.box-main{
+    width: 100%;
 }
