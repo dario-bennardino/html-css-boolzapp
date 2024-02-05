@@ -15,6 +15,10 @@
    display: flex;
 }
 
+.tex.center{
+    text-align: center;
+}
+
 .debug{
     border: 1px solid black;
      
@@ -47,7 +51,7 @@ body{
 .col-sm{
     width: 29%;
     background-color: white;
-    height: 400px;
+    height: 600px;
 }
 
 .topbar-sx{
@@ -60,13 +64,21 @@ body{
 .topbar-dx{
     height: 75px;
     background-color: var(--colore-topbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 
 /* colonna di destra */
 .col-md{
     width: 68%;
-    height: 400px;
+    height: 600px;
+}
+
+.user-topbar-dx{
+    
 }
 
 /* box messaggi */
@@ -80,7 +92,23 @@ body{
 .bottombar{
     height: 15%;
     background-color: var(--colore-topbar);
+    align-items: center;
+}
 
+.emoticon{
+    width: 10%;
+}
+
+.write-message{
+    width: 80%;
+}
+
+.write-message input{
+    width: 100%;
+}
+
+.vocal-message{
+    width: 10%;
 }
 
 /* Soluzione responsive */
