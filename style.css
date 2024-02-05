@@ -17,8 +17,10 @@
 
 .debug{
     border: 1px solid black;
+     
 }
 
+/* Versione desktop first */
 
 *{
     margin: 0;
@@ -31,9 +33,38 @@ body{
 }
 
 .container{
-    width: 100%;
+    width: 1300px;
+    margin: 50px auto;
 }
 
 .box-main{
     width: 100%;
+    display: flex;
+
+}
+
+/* colonna di sinistra */
+.col-sm{
+    width: 29%;
+    background-color: lightsalmon;
+    height: 400px;
+}
+
+.topbar-sx{
+    height: 75px;
+    /* width: 100%; */
+    
+}
+
+.topbar-dx{
+    height: 75px;
+    /* width: 100%; */
+}
+
+
+/* colonna di destra */
+.col-md{
+    width: 68%;
+    background-color: lightgreen;
+    height: 400px;
 }
