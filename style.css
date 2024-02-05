@@ -83,3 +83,19 @@ body{
 
 }
 
+/* Soluzione responsive */
+
+/* versione tablet */
+@media screen and (max-width: 992px){
+
+}
+
+
+
+/* versione mobile */
+@media screen and (max-width: 540px){
+    .container{
+        width: 100%;
+    }
+
+}
