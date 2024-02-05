@@ -1,5 +1,20 @@
+/* Root colori */
+:root{
+    --colore-primario: #009688; 
+    --colore-secondario:#DBDBD3; 
+    --colore-messaggi-inviati: #D5F9BA;
+    --colore-topbar: #EAEAEA;
+    --colore-topbar-icone: #B1B1B1;
+    --colore-bottombar-icone: #6B7376;   
+}
+/* Fine root colori */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/mine.jpg);
 }
