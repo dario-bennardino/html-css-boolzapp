@@ -32,6 +32,10 @@
     border-radius: 5px;
 }
 
+.border-rad-img{
+    border-radius: 50%;
+}
+
 /* Versione desktop first */
 
 *{
@@ -59,7 +63,7 @@ body{
 .col-sm{
     width: 29%;
     background-color: white;
-    height: 600px;
+    height: 750px;
 }
 
 .topbar-sx{
@@ -78,11 +82,23 @@ body{
     padding: 10px;
 }
 
+.img-user-topbar-dx{
+    width: 75px;
+    height: 75px;
+}
+
+.img-user-topbar-dx img{
+    width: 60px;
+   object-fit: cover;
+   border-radius: 50%;
+
+}
+
 
 /* colonna di destra */
 .col-md{
     width: 68%;
-    height: 600px;
+    height: 750px;
 }
 
 .user-topbar-dx{
@@ -94,10 +110,13 @@ body{
 .box-messages{
     height: calc(85% - 75px);
     background-image: url(img/mine.jpg);
+    overflow: scroll;
+    padding: 35px 65px;
 }
 
 .row-send-message{
     justify-content: flex-end;
+    padding: 10px 0;
     
 }
 
