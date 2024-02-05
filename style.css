@@ -29,7 +29,7 @@
 }
 
 body{
-    background-image: url(img/mine.jpg);
+    background-image: var(--colore-secondario);
 }
 
 .container{
@@ -46,26 +46,26 @@ body{
 /* colonna di sinistra */
 .col-sm{
     width: 29%;
-    background-color: lightsalmon;
+    background-color: white;
     height: 400px;
 }
 
 .topbar-sx{
     height: 75px;
-    /* width: 100%; */
+    background-color: var(--colore-topbar);
+
     
 }
 
 .topbar-dx{
     height: 75px;
-    /* width: 100%; */
+    background-color: var(--colore-topbar);
 }
 
 
 /* colonna di destra */
 .col-md{
     width: 68%;
-    background-color: lightgreen;
     height: 400px;
 }
 
@@ -73,10 +73,13 @@ body{
 
 .box-messages{
     height: calc(85% - 75px);
+    background-image: url(img/mine.jpg);
 }
 
 /* barra scrivi un messaggio */
 .bottombar{
     height: 15%;
+    background-color: var(--colore-topbar);
+
 }
 
