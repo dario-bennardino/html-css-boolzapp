@@ -68,3 +68,15 @@ body{
     background-color: lightgreen;
     height: 400px;
 }
+
+/* box messaggi */
+
+.box-messages{
+    height: calc(85% - 75px);
+}
+
+/* barra scrivi un messaggio */
+.bottombar{
+    height: 15%;
+}
+
