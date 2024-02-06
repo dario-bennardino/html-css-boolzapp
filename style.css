@@ -57,6 +57,8 @@ body{
 
     overflow: hidden;
 
+    font-family: 'Lato', sans-serif;
+
 }
 
 .container{
@@ -92,7 +94,6 @@ body{
 .icons-topbar-dx{
     width: 10%;
     justify-content: space-around;
-
 }
 
 /* colonna di sinistra */
@@ -146,8 +147,7 @@ body{
     height: 100%;
     background-color: var(--colore-sezione-notifiche);
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .icon-notifications{
@@ -157,14 +157,12 @@ body{
     background-color: white;
     align-items: center;
     justify-content: center;
-
 }
 
 .img-notifications .fa-solid{
     color: var(--colore-sezione-notifiche);
     font-size: 1.4rem;
-    background-color: white;
- 
+    background-color: white; 
 }
 
 .text-notification{
@@ -198,8 +196,8 @@ body{
     width: 80%;
 }
 
-.icon-search-chat{
-    /* justify-content: center; */
+.icon-search-chat .fa-solid{
+    color: var(--colore-topbar-icone);
 }
 
 /* chat */
@@ -211,7 +209,6 @@ body{
 
 .row-chat{
     height: 80px;
-    /* border: 1px solid black; */
     padding: 5px;
 }
 
@@ -275,10 +272,13 @@ body{
     height: 645px;
 }
 
+.box-messages .fa-solid{
+    color: var(--colore-topbar-icone);
+}
+
 .row-send-message{
     justify-content: flex-end;
-    padding: 10px 0;
-    
+    padding: 10px 0;   
 }
 
 .row-received-message{
@@ -289,23 +289,33 @@ body{
     background-color: var(--colore-messaggi-inviati);
     width: 55%;
     align-items: end;
+    display: flex;
 }
 
 .message-received{
     background-color: white;
     width: 55%;
     align-items: end;
-
 }
 
-/* inserire la chevron e ora in un div con unico largo 5per con flex */
+.message-send-dx{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time-message-box{
+    color: var(--colore-topbar-icone);
+    align-items: center;
+    font-size: 0.7rem;
+}
 
 /* barra scrivi un messaggio */
 .bottombar{
     height: 70px;
     background-color: var(--colore-topbar);
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .emoticon{
@@ -333,8 +343,6 @@ body{
     padding-left: 5px;
     border: none;
 }
-
-
 
 .vocal-message{
     width: 10%;
