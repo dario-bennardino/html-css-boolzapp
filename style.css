@@ -181,6 +181,25 @@ body{
 .search-chat{
     height: 75px;
     background-color: var(--colore-search-chat);
+    align-items: center;
+}
+
+.search-chat-sx{
+    width: 50px;
+    justify-content: center;
+}
+
+.search-chat-dx{
+    width: 100%;
+}
+
+.search-chat-dx input{
+    border: none;
+    width: 80%;
+}
+
+.icon-search-chat{
+    /* justify-content: center; */
 }
 
 /* chat */
@@ -309,7 +328,7 @@ body{
 
 .write-message input{
     width: 100%;
-    height: 65px;
+    height: 50px;
     border-radius: 5px;
     padding-left: 5px;
     border: none;
