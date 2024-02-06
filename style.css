@@ -48,6 +48,7 @@
 
 body{
     background-image: var(--colore-secondario);
+    height: 100vh;
 }
 
 .container{
@@ -126,9 +127,32 @@ body{
    border-radius: 50%;  
 }
 
+/* notifications */
+
 .notifications{
     height: 80px;
     background-color: var(--colore-sezione-notifiche);
+}
+
+.img-notifications{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-notifications .fa-regular{
+    color: var(--colore-sezione-notifiche);
+}
+
+.text-notification{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .search-chat{
@@ -236,6 +260,11 @@ body{
 
 /* versione tablet */
 @media screen and (max-width: 992px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
     .col-sm{
         width: 10%;
     }
