@@ -17,7 +17,7 @@
    display: flex;
 }
 
-.tex.center{
+.tex-center{
     text-align: center;
 }
 
@@ -97,7 +97,7 @@ body{
 
 /* colonna di sinistra */
 .col-sm{
-    width: 29%;
+    width: 30%;
     background-color: white;
     /* height: 750px; */
 }
@@ -189,19 +189,48 @@ body{
 /* chat */
 
 .chat{
-    /* height: calc(100% - 230px); */
+    overflow-y: scroll;
 }
 
 .row-chat{
     height: 80px;
     border: 1px solid black;
+    padding: 5px;
+}
+
+.row-chat-sx{
+    width: 90%;
+    align-items: center;
+}
+
+.img-row-chat{
+    width: 75px;
+}
+
+.img-row-chat img{
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.row-chat-dx{
+    width: 10%;
+    align-items: center;
+}
+
+.time-message{
+    color: var(--colore-topbar-icone);
+    align-items: center;
+}
+
+.text-message-row-chat{
+    color: var(--colore-topbar-icone);
 }
 
 
 /* colonna di destra */
 .col-md{
-    width: 68%;
-    /* height: 750px; */
+    width: 70%;
 }
 
 .text-user-topbar-dx{
@@ -209,7 +238,7 @@ body{
     justify-content: center;
 }
 
-.name-user-topbar-dx{
+.name-user{
     padding: 5px 0;
     font-weight: bold;
 }
@@ -223,7 +252,7 @@ body{
 .box-messages{
     height: calc(100% - 145px);
     background-image: url(img/mine.jpg);
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 35px 65px;
 }
 
@@ -254,7 +283,7 @@ body{
 
 /* barra scrivi un messaggio */
 .bottombar{
-    height: 15%;
+    height: 70px;
     background-color: var(--colore-topbar);
     align-items: center;
     
