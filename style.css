@@ -137,14 +137,27 @@ body{
 .img-notifications{
     width: 20%;
     height: 100%;
+    background-color: var(--colore-sezione-notifiche);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon-notifications{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background-color: white;
     align-items: center;
     justify-content: center;
 
 }
 
-.img-notifications .fa-regular{
+.img-notifications .fa-solid{
     color: var(--colore-sezione-notifiche);
+    font-size: 1.4rem;
+    background-color: white;
+ 
 }
 
 .text-notification{
@@ -152,7 +165,10 @@ body{
     height: 100%;
     flex-direction: column;
     justify-content: center;
+}
 
+.text-notification a{
+    color: var(--colore-bottombar-icone);
 }
 
 .search-chat{
