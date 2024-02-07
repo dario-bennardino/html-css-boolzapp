@@ -187,6 +187,14 @@ main{
     height: 75px;
     background-color: var(--colore-search-chat);
     align-items: center;
+    justify-content: center;
+}
+
+.box-search-chat{
+    width: 90%;
+    height: 60%;
+    align-items: center;
+    background-color: white;
 }
 
 .search-chat-sx{
@@ -301,7 +309,6 @@ main{
 /* box messaggi */
 
 .box-messages{
-    /* height: calc(100% - 145px); */
     background-image: url(img/mine.jpg);
     overflow-y: scroll;
     padding: 35px 65px;
@@ -332,7 +339,6 @@ main{
     background-color: white;
     width: 55%;
     align-items: end;
-
 }
 
 .message-send-dx{
@@ -391,9 +397,8 @@ main{
 
 /* versione tablet */
 @media screen and (max-width: 992px){
+
     .container{
-        /* width: 100%;
-        height: 100vh; */
         width: 100%;
         height: 100%;
     }
@@ -414,7 +419,6 @@ main{
         display: none;
     }
 
-
     .icons-topbar-sx{
         display: none;
     }
@@ -429,14 +433,8 @@ main{
 
 }
 
-
-
 /* versione mobile */
 @media screen and (max-width: 540px){
-    /* .container{
-        width: 100%;
-        height: 100vh;
-    } */
 
     .col-sm{
         display: none;
