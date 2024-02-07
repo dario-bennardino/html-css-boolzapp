@@ -249,6 +249,11 @@ main{
     color: var(--colore-topbar-icone);
 }
 
+/* Message-panel */
+.message-options-panel{
+    display: none;
+}
+
 
 /* colonna di destra */
 .col-md{
