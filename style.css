@@ -252,6 +252,22 @@ main{
 /* Message-panel */
 .message-options-panel{
     display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.75);
+}
+
+.message-send-dx:hover .message-options-panel{
+    display: block;
+}
+
+.message-options-panel > div{
+    cursor: pointer;
+    width: 100%;
 }
 
 
@@ -309,6 +325,7 @@ main{
     background-color: white;
     width: 55%;
     align-items: end;
+
 }
 
 .message-send-dx{
@@ -316,6 +333,8 @@ main{
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    cursor: pointer;
 }
 
 .time-message-box{
